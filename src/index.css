@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Eye styles */
+.eye {
+  transition: all 0.1s ease;
+}
+
+.pupil {
+  transition: transform 0.1s ease;
+}
+
+.highlight {
+  pointer-events: none;
 }

@@ -1,11 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import EyeContainer from "../components/EyeContainer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-blue-100">
+      <h1 className="text-4xl font-bold mb-8 text-blue-800">Eyes Following You</h1>
+      <p className="text-xl text-blue-600 mb-12">Move your cursor around and watch the eyes follow!</p>
+      
+      <EyeContainer />
+      
+      <div className="mt-12 text-blue-500 text-center">
+        <p>A simple interactive mouse-tracking animation</p>
       </div>
     </div>
   );
